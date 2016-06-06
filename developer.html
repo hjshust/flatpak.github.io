@@ -1164,13 +1164,13 @@
   
   <pre>&#x000A;<span class="unselectable">$ </span>flatpak build-bundle [OPTION...] LOCATION FILENAME NAME [BRANCH]&#x000A;<span class="unselectable">$ </span>flatpak build-import-bundle [OPTION...] LOCATION FILENAME</pre>
   
-  <p>For example, to create a bundle named <code>dictionary.pak</code> containing the GNOME dictionary app from the repository at ~/repositories/apps, run:</p>
+  <p>For example, to create a bundle named <code>dictionary.flatpak</code> containing the GNOME dictionary app from the repository at ~/repositories/apps, run:</p>
   
-  <pre>&#x000A;<span class="unselectable">$ </span>flatpak build-bundle ~/repositories/apps dictionary.pak org.gnome.Dictionary</pre>
+  <pre>&#x000A;<span class="unselectable">$ </span>flatpak build-bundle ~/repositories/apps dictionary.flatpak org.gnome.Dictionary</pre>
   
   <p>To import the bundle into a repository on another machine, run:</p>
   
-  <pre>&#x000A;<span class="unselectable">$ </span>flatpak build-import-bundle ~/my-apps dictionary.pak</pre>
+  <pre>&#x000A;<span class="unselectable">$ </span>flatpak build-import-bundle ~/my-apps dictionary.flatpak</pre>
   
   <p>Note that bundles have some drawbacks, compared to repositories. For example, distributing updates is much more convenient with a hosted repository, since users can just run <code>flatpak update</code>.</p>
   </div></div></div></section>
