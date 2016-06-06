@@ -131,6 +131,16 @@
   <p>In general unprivileged container systems can&#39;t stack, because anything running inside the sandbox does not have the necessary privileges to set up a sandbox, nor does it have the ability to raise its privileges in any way. For instance, firejail can never work inside flatpak, because it is setuid. That being said, using multiple sandboxing frameworks at once does not really make anything more secure, so there is little point in trying to nest things like that.</p>
   
   <p>It is certainly possible for Flatpak and Flatpak applications to coexist with applications that are packaged in other ways, on the same host system.</p>
+  
+  <h3>Are there any IDEs that support Flatpak?</h3>
+  
+  <p>The short answer is: no, at this point, there is no IDE with fully fleshed out Flatpak support. But flatpak-builder is a really nice commandline tool for building flatpak apps. If you cannot live without IDE integration, you should check out <a href="https://wiki.gnome.org/Apps/Builder">GNOME Builder</a>; its 3.20 version has initial support for Flatpak. The next version should greatly improve this.</p>
+  
+  <h3>Can I host my flatpak app on github?</h3>
+  
+  <p>Flatpak repositories can&#39;t (currently) be put on github in a convenient way.
+  As an alternative, you can create a single-file bundle, and put that up on github
+  as a &#39;release&#39;. Note that bundles have some drawbacks, compared to a repository.</p>
   </div></div></div></section>
   <section class='bg-black' id='footer'>
     <div class='container'>
