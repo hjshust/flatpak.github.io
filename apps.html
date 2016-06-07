@@ -64,7 +64,29 @@
   
   <h2>Stable GNOME applications</h2>
   
-  <p>A collection of GNOME applications are available from the latest upstream release (version 3.20). These can be found in the gnome-apps repository, which can be added with:</p>
+  <p>A collection of GNOME applications are available from the latest upstream release (version 3.20). This includes:</p>
+  
+  <ul>
+  <li><a href="https://wiki.gnome.org/Apps/Builder">Builder</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Calculator">Calculator</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Calendar">Calendar</a></li>
+  <li>Characters</li>
+  <li><a href="https://wiki.gnome.org/Apps/Clocks">Clocks</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Dictionary">Dictionary</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Evince">Evince</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/EyeOfGnome">Eye of Gnome</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Iagno">Iagno</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Maps">Maps</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Bijiben">Notes</a> (Bijiben)</li>
+  <li><a href="https://wiki.gnome.org/Apps/Polari">Polari</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Rhythmbox">Rhythmbox</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Todo">Todo</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Weather">Weather</a></li>
+  <li><a href="https://wiki.gnome.org/Apps/Epiphany">Web</a> (Epiphany)</li>
+  </ul>
+  
+  <p>These can be found in the gnome-apps repository, which can be added with:</p>
   
   <pre>&#x000A;<span class="unselectable">$ </span>wget https://sdk.gnome.org/keys/gnome-sdk.gpg&#x000A;<span class="unselectable">$ </span>flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org/repo-apps/</pre>
   
@@ -110,7 +132,7 @@
   
   <p>To add the GNOME nightly apps repository, run:</p>
   
-  <pre>&#x000A;<span class="unselectable">$ </span>flatpak remote-add --gpg-import=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/</pre>
+  <pre>&#x000A;<span class="unselectable">$ </span>wget https://sdk.gnome.org/nightly/keys/nightly.gpg&#x000A;<span class="unselectable">$ </span>flatpak remote-add --gpg-import=nightly.gpg gnome-nightly-apps https://sdk.gnome.org/nightly/repo-apps/</pre>
   
   <p>And to list the apps in the repository:</p>
   
